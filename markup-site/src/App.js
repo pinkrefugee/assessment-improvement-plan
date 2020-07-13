@@ -1,92 +1,85 @@
 import React from 'react';
-import logo from './logo.svg';
-import image1 from './assets/image1.jpg'
-import image2 from './assets/image2.jpg'
-import image3 from './assets/image3.jpg'
+import pic01 from './assets/pic01.jpg'
+import pic02 from './assets/pic02.jpg'
+import pic03 from './assets/pic03.jpg'
+import pic04 from './assets/pic04.jpg'
+import pic05 from './assets/pic05.jpg'
+import pic06 from './assets/pic06.jpg'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header>
-        <nav>
-          <div className='header-content'>
-            <div className='logo'>
-              <h1>Logo</h1>
-              <p>Blbla</p>
-            </div>
-            <ul>
-              <li><h3>Text Link</h3></li>
-              <li><h3>Text Link</h3></li>
-              <li><h3>Text Link</h3></li>
-              <li><h3>Text Link</h3></li>
-            </ul>
-          </div>
-        </nav>
+        <section className='header-content'>
+          <h1>Full Motion</h1>
+          <p>Some meaningful and thoughtful text that will encourage you to do the things you don't have to</p>
+          <i class="fa fa-check-circle fa-3x" aria-hidden="true"></i>
+        </section>
       </header>
-      <section className='main'>
-        <section className='section1'>
-          <img src={image1} alt="" />
-        </section>
-        <section className='section2'>
-          <article className='article1'>
-            <img src={image2} alt="" />
-            <p>Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+      <main>
+        <section className='main-content'>
+          <article>
+            <img src={pic01} alt=''></img>
+            <div>
+              <h3>Where does it come from?</h3>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <button>Click</button>
+            </div>
           </article>
-          <article className='article2'>
-            <img src={image2} alt="" />
-            <p>Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+          <article>
+            <img src={pic02} alt=''></img>
+            <div>
+              <h3>Where does it come from?</h3>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <button>Click</button>
+            </div>
           </article>
-          <article className='article3'>
-            <img src={image2} alt="" />
-            <p>Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+          <article>
+            <img src={pic03} alt=''></img>
+            <div>
+              <h3>Where does it come from?</h3>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <button>Click</button>
+            </div>
+          </article>
+          <article>
+            <img src={pic04} alt=''></img>
+            <div>
+              <h3>Where does it come from?</h3>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <button>Click</button>
+            </div>
+          </article>
+          <article>
+            <img src={pic05} alt=''></img>
+            <div>
+              <h3>Where does it come from?</h3>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <button>Click</button>
+            </div>
+          </article>
+          <article>
+            <img src={pic06} alt=''></img>
+            <div>
+              <h3>Where does it come from?</h3>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <button>Click</button>
+            </div>
           </article>
         </section>
-        <section className='section3'>
-          <article className='article4'>
-            <div className='article-info'>
-              <h3>Article title</h3>
-                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-              </div>
-              <img src={image3} alt="" />
-            </article>
-        </section>
-      </section>
+       </main>
       <footer>
         <section className='footer-info-container'>
-          <section className='footer-info-content'>
-            <h4>Line Block</h4>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-          </section>
-          <section className='footer-info-content'>
-            <h4>Line Block</h4>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-          </section>
-          <section className='footer-info-content'>
-            <h4>Line Block</h4>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-          </section>
-          <section className='footer-info-content'>
-            <h4>Line Block</h4>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-          </section>
+          <h3>Etiam veroeros lorem</h3>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+          <div className='footer-icons'>
+            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+          </div>
         </section>
-        
       </footer>
     </div>
   );
