@@ -9,37 +9,37 @@ function App() {
   return (
     <div className="App">
       <header>
-        <nav>
-          <div className='header-content'>
-            <div className='logo'>
-              <h1>Logo</h1>
-              <p>Blbla</p>
-            </div>
-            <ul>
-              <li><h3>Text Link</h3></li>
-              <li><h3>Text Link</h3></li>
-              <li><h3>Text Link</h3></li>
-              <li><h3>Text Link</h3></li>
-            </ul>
+        <div className='header-content'>
+          <div className='logo'>
+            <h1>Logo</h1>
+            <h3>Blbla</h3>
           </div>
-        </nav>
+          <nav>
+            <ul>
+              <li><a href='#'>Text Link</a></li>
+              <li><a a href='#'>Text Link</a></li>
+              <li><a a href='#'>Text Link</a></li>
+              <li><a a href='#'>Text Link</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <section className='main'>
+      <main>
         <section className='section1'>
           <img src={image1} alt="" />
         </section>
         <section className='section2'>
-          <article className='article1'>
+          <article className='article-central float-left'>
             <img src={image2} alt="" />
             <p>Where does it come from?
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
           </article>
-          <article className='article2'>
+          <article className='article-central'>
             <img src={image2} alt="" />
             <p>Where does it come from?
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
           </article>
-          <article className='article3'>
+          <article className='article-central float-right'>
             <img src={image2} alt="" />
             <p>Where does it come from?
 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
@@ -54,36 +54,44 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
               <img src={image3} alt="" />
             </article>
         </section>
-      </section>
+      </main>
       <footer>
         <section className='footer-info-container'>
-          <section className='footer-info-content'>
+          <section className='footer-info-content float-left'>
             <h4>Line Block</h4>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
+            <ul>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+            </ul>
           </section>
-          <section className='footer-info-content'>
+          <section className='footer-info-content info-margin'>
             <h4>Line Block</h4>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
+            <ul>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+            </ul>
           </section>
-          <section className='footer-info-content'>
+          <section className='footer-info-content info-margin'>
             <h4>Line Block</h4>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
+            <ul>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+            </ul>
           </section>
-          <section className='footer-info-content'>
+          <section className='footer-info-content float-right'>
             <h4>Line Block</h4>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
-            <a href='#'>Link to somewhere</a>
+            <ul>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+              <li><a href='#'>Link to somewhere</a></li>
+            </ul>
           </section>
         </section>
         
