@@ -2,8 +2,6 @@
   background-color: #201f24;
 }
 header {
-  position: relative;
-  display: block;
   height: 400px;
   background-image: url("assets/header.jpg");
   color: white;
