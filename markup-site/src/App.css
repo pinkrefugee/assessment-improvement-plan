@@ -5,11 +5,14 @@ header {
   color: white;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
 nav {
-  width: 500px;
   height: 150px;
   float: right;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .header-content {
@@ -69,13 +72,17 @@ main {
 .section3 {
   margin-top: 50px;
   margin-bottom: 50px;
-  height: 250px;
   overflow: hidden;
 }
+
 .article4 .article-info {
   float: left;
   width: 45%;
   text-align: left;
+}
+
+.clear {
+  clear: both;
 }
 
 .article4 .article-info h3{
