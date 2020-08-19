@@ -33,7 +33,7 @@ main {
 }
 
 .main-content>* {
-  
+  flex-grow: 1;
   margin: 10px;
 }
 
@@ -51,7 +51,7 @@ main {
 }
 
 .main-content article div{
-  width: 250px;
+  padding: 10px;
 }
 
 .main-content article button{
