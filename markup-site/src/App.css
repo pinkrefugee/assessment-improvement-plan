@@ -6,24 +6,26 @@ header {
 }
 
 ul {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 nav {
-  height: 150px;
+  height: 50px;
+  padding: 50px 0;
   float: right;
-  padding-top: 50px;
 }
 
 .header-content {
   width: 960px;
-  height: 100px;
+  height: 150px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 25px 0;
 }
 
 .logo {
   float: left;
+  height: 100%;
 }
 
 nav ul {
