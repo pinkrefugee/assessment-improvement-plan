@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import pic01 from './assets/pic01.jpg'
 import pic02 from './assets/pic02.jpg'
 import pic03 from './assets/pic03.jpg'
@@ -8,6 +9,19 @@ import pic06 from './assets/pic06.jpg'
 import './App.css';
 
 function App() {
+  document.addEventListener('blur', (event) => {
+    console.log(event.target.parentElement.dataset.id);
+    event.target.parentElement.dataset.id = event.target.value;
+    event.target.value = '';
+  }, true);
+
+  function showArticleId(event) {
+    const article = event.target.closest('article'); 
+
+    if (!article) return;
+
+    alert(article.dataset.id ? article.dataset.id : 'Please set the id');
+  };
   return (
     <div className="App">
       <header>
@@ -18,7 +32,7 @@ function App() {
         </section>
       </header>
       <main>
-        <section className='main-content'>
+        <section className='main-content' onDoubleClick={showArticleId}>
           <article>
             <img src={pic01} alt=''></img>
             <div>
@@ -26,6 +40,7 @@ function App() {
               <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <button>Click</button>
             </div>
+            <input></input>
           </article>
           <article>
             <img src={pic02} alt=''></img>
@@ -34,6 +49,7 @@ function App() {
               <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <button>Click</button>
             </div>
+            <input></input>
           </article>
           <article>
             <img src={pic03} alt=''></img>
@@ -42,6 +58,7 @@ function App() {
               <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <button>Click</button>
             </div>
+            <input></input>
           </article>
           <article>
             <img src={pic04} alt=''></img>
@@ -50,6 +67,7 @@ function App() {
               <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <button>Click</button>
             </div>
+            <input></input>
           </article>
           <article>
             <img src={pic05} alt=''></img>
@@ -58,6 +76,7 @@ function App() {
               <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <button>Click</button>
             </div>
+            <input></input>
           </article>
           <article>
             <img src={pic06} alt=''></img>
@@ -66,6 +85,7 @@ function App() {
               <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <button>Click</button>
             </div>
+            <input></input>
           </article>
         </section>
        </main>
