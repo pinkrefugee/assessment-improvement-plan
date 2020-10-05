@@ -24,8 +24,16 @@ main {
   margin: 50px 0;
   background-color: #201f24;
   color: white;
+  min-height: 150px;
 }
 
+.article-management {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
 .main-content {
   width: 960px;
   display: flex;
@@ -45,6 +53,14 @@ main {
   text-align: center;
   background-color: #2d2c32;
   padding-bottom: 20px;
+}
+
+.main-content .article-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main-content article, .main-content article img{
@@ -81,6 +97,10 @@ footer {
   width: 400px;
   display: flex;
   justify-content: space-between;
+}
+
+.right-margin {
+  margin-right: 5px;
 }
 
 
